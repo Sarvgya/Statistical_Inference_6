@@ -25,16 +25,17 @@ simulations <- 1000
 exp_data <- rexp(n, lambda)
 mean_data <- 1/lambda
 standard_deviation_data <- 1/lambda
+n
+head(exp_data)
 
 ```
 
 ### Part 2: Basic Inferential Data Analysis Instructions
 
 Code Explanation of Part 2
-You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
-plot(pressure)
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
