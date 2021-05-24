@@ -1,11 +1,36 @@
+---
+title: "Statistical Inference"
+author: "SK"
+output: pdf_document
+---
 
-
-```{r cars}
-summary(cars)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Including Plots
+## R Markdown
 
+Here, our aim is to investigate the distribution of averages of 40 exponential distribution in R and simulate this exponential distribution 1000 times and compare it with Central Limit Theorem(CLT) or Normal Distribution.
+
+### Part 1: Simulation Exercise Instructions
+
+Code Explanation of Part 1
+
+```{r cars}
+set.seed(10000)
+n <- 40
+lambda <- 0.2
+sim_function <- function(a,b)
+simulations <- 1000
+exp_data <- rexp(n, lambda)
+mean_data <- 1/lambda
+standard_deviation_data <- 1/lambda
+
+```
+
+### Part 2: Basic Inferential Data Analysis Instructions
+
+Code Explanation of Part 2
 You can also embed plots, for example:
 
 ```{r pressure, echo=FALSE}
